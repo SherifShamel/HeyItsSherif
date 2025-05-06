@@ -29,6 +29,18 @@ li[class="nav-item"] a:hover::after {
   width: 70%;
 }
 
+
+li .nav-link.active::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  left: 0;
+  bottom: 0px;
+  position: absolute;
+  background-color: white;
+  transition: width 0.3s;
+}
+
 header {
   background-image: url(../assets/profile.jpg);
   background-position: top;
@@ -202,8 +214,7 @@ header {
   border-color: white;
 }
 
-
-.contact-section{
+.contact-section {
   background-image: url(../assets/images/overlay-bg.jpg);
   background-position: center;
   background-size: cover;
